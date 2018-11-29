@@ -116,7 +116,7 @@ class Info extends Component {
          <Grid item sm={12} className={classes.box} >
            <Button className={classes.smBt} onClick={handleSignUp}>Skip</Button>
           </Grid>
-          <Grid item sm={12}>
+          <Grid item sm={12} className={classes.box} >
            <Button onClick={handleSignUp} className={classes.cssRoot}>Sign up</Button>
           </Grid>
       </Grid>

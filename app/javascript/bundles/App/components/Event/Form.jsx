@@ -201,7 +201,7 @@ handleLocation = (location, activity, activityId ) => {
 
                 label="Title"
                 id="event_title"
-                value={event.event_title}
+                value={event_new.event_title}
                 onChange={this.handleTitleChange}
                 margin="normal"
                 fullWidth
@@ -211,7 +211,7 @@ handleLocation = (location, activity, activityId ) => {
               <TextField
                 label="Date"
                 id="event_date"
-                value={event.event_date}
+                value={event_new.event_date}
                 onChange={this.handleDateChange}
                 margin="normal"
                 fullWidth
@@ -221,7 +221,7 @@ handleLocation = (location, activity, activityId ) => {
               <TextField
                 label="Start Time"
                 id="event_start_time"
-                value={event.start_time}
+                value={event_new.start_time}
                 onChange={this.handleStartTimeChange}
                 margin="normal"
                 fullWidth
@@ -231,7 +231,7 @@ handleLocation = (location, activity, activityId ) => {
                   <TextField
                     label="Quantity of people"
                     id="event_quantity"
-                    value={event.quantity}
+                    value={event_new.quantity}
                     onChange={this.handleQuantityChange}
                     margin="normal"
                     fullWidth
@@ -241,7 +241,7 @@ handleLocation = (location, activity, activityId ) => {
                   <TextField
                     label="Description"
                     id="event_end_time"
-                    value={event.description}
+                    value={event_new.description}
                     onChange={this.handleDescriptionChange}
                     margin="normal"
                     fullWidth
