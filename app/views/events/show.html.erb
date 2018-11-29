@@ -1,0 +1,19 @@
+<%=
+  react_component 'Event',
+  props: { event: @event, user: @user, profile: @profile, participants: @participants, activity: @activity}
+%>
+
+<% @event.messages.each do |message| %>
+  <p>
+    <%= message.body %>
+    <%= message.user.profile.first_name %>
+    <%= time_ago_in_words(message.created_at) %>
+  </p>
+<% end %>
+
+<hr>
+
+<%= form_for([@event, Message.new]) do |form| %>
+  <%= form.text_field :body %>
+  <%= form.submit %>
+<% end %>

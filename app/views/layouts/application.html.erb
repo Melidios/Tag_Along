@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TagAlong</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYA1eCg1ToFOxVfVxqZHzqNnNJFgnLNYw"></script>
+    <%= stylesheet_link_tag 'https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.2.0/mapbox-gl-geocoder.css' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'user', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'app-bundle' %>
+    <meta
+    name="viewport"
+    content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <%= javascript_pack_tag 'Map' %>
+    <%= javascript_pack_tag 'app-bundle' %>
+
+  </head>
+
+  <body>
+    <%= yield %>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.2.0/mapbox-gl-geocoder.min.js'></script>
+  </body>
+</html>

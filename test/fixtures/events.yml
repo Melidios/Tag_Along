@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event_date: 2018-11-08
+  start_time: 2018-11-08 16:45:27
+  end_time: 2018-11-08 16:45:27
+  quantity: 1
+  notification: MyString
+  location: one
+
+two:
+  event_date: 2018-11-08
+  start_time: 2018-11-08 16:45:27
+  end_time: 2018-11-08 16:45:27
+  quantity: 1
+  notification: MyString
+  location: two

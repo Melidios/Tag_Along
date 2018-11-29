@@ -1,0 +1,3 @@
+<%= react_component 'Events',
+    props: { activities: current_user.activities.pluck(:name).map(&:downcase) } %>
+<%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
